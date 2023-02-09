@@ -2,28 +2,28 @@ package edu.eci.cvds.patterns.shapes;
 
 public class ShapeFactory() {
     public static Shape create(RegularShapeType type){
-        Shape s = null;
+        Shape shape = null;
         switch (type) {
             case Triangle:{
-                s = new Triangle();
+                shape = new Triangle();
                 break;
             }
             case Quadrilateral:{
-                s = new Quadrilateral();
+                shape = new Quadrilateral();
                 break;
             }
             case Hexagon:{
-                s = new Hexagon();
+                shape = new Hexagon();
                 break;
             }
             case Pentagon:{
-                s = new Pentagon();
+                shape = new Pentagon();
                 break;
             }
 
             default:
                 break;
         }
-        return s;
+        return shape;
 }
 
